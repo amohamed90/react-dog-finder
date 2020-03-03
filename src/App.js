@@ -8,12 +8,12 @@ import whiskey from './whiskey.jpg'
 import duke from './duke.jpg'
 import './App.css';
 
-function App(props) {
+function App({dogs}) {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav dogs={props.dogs}/>
-        <Routes dogs={props.dogs}/>
+        <Nav dogs={dogs}/>
+        <Routes dogs={dogs}/>
       </BrowserRouter>
     </div>
   );

@@ -5,7 +5,7 @@ import {v4 as uuid} from "uuid";
 function DogDetails({dogs}) {
 
   const {name} = useParams();
-  const matchedDog = dogs.filter(d => d.name === name)[0];
+  const matchedDog = dogs.find(d => d.name === name);
 
   return (
      <div>
